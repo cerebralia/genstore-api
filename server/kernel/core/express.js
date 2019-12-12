@@ -13,9 +13,9 @@ const MongoStore = require('connect-mongo')(session);
 
 const swig = new SwigEngine();
 
-console.log('ENV', path.join(__dirname,'..', '..', '..', 'development.env'));
+console.log('ENV', path.join(__dirname,'..', '..', '..', 'config.env'));
 require('dotenv').config({
-  path: path.join(__dirname,'..', '..', '..', 'development.env')
+  path: path.join(__dirname,'..', '..', '..', 'config.env')
 });
 
 exports.name = 'kernel-app';
